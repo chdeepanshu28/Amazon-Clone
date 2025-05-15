@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Amazon Clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo" tabindex="0" aria-label="Amazon Home">
+    amazon
+  </div>
+  <div class="search-container">
+    <input type="text" aria-label="Search products" placeholder="Search Amazon" id="search-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+    <button aria-label="Search" id="search-button" type="submit">🔍</button>
+  </div>
+  <nav>
+    <a href="#" tabindex="0" aria-label="Account & Lists">
+      <span>Hello, User</span>
+      <span>Account & Lists</span>
+    </a>
+    <a href="#" tabindex="0" aria-label="Orders">
+      <span>Returns</span>
+      <span>& Orders</span>
+    </a>
+    <button id="cart-btn" aria-describedby="cart-count" aria-label="Shopping Cart" aria-haspopup="true" aria-expanded="false">
+      🛒
+      <span id="cart-count" aria-live="polite" aria-atomic="true" style="display:none;">0</span>
+    </button>
+  </nav>
+</header>
+<main>
+  <section class="product-grid" aria-label="Product List" id="product-grid" tabindex="0">
+    <!-- Products will be generated here -->
+  </section>
+</main>
+<footer>
+  &copy; 2024 Amazon Clone. All Rights Reserved.
+</footer>
+<div id="cart-overlay" tabindex="-1"> </div>
+<aside id="cart-sidebar" aria-label="Shopping Cart Sidebar" tabindex="-1">
+  <button id="cart-close-btn" aria-label="Close cart sidebar">&times;</button>
+  <h2>Your Cart</h2>
+  <div id="cart-items-container" tabindex="0">
+    <!-- Cart items rendered here -->
+  </div>
+  <div id="cart-total" aria-live="polite" aria-atomic="true">Total: $0.00</div>
+</aside>
+<script src="script.js"> </script>  
+</body>
+</html>
